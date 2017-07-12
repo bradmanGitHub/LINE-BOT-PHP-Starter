@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			$messages = [
 				'type' => 'text',
-				'text' => $text . 'ป่วยครับ...:) '
+				'text' => $text . '..today sick krub.. '
 				//'text' => $text
 			];
 
