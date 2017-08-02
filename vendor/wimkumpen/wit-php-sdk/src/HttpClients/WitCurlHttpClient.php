@@ -144,11 +144,11 @@ class WitCurlHttpClient implements WitHttpClientInterface
     {
         $headerSize = $this->getHeaderSize();
 
+        $rawHeaders = mb_substr($this->rawResponse, 0, $headerSize);
+        $rawBody = mb_substr($this->rawResponse, $headerSize);
+        
         //$rawHeaders = mb_substr($this->rawResponse, 0, $headerSize);
         //$rawBody = mb_substr($this->rawResponse, $headerSize);
-        
-        $rawHeaders = utf8_substr($this->rawResponse, 0, $headerSize);
-        $rawBody = mb_substr($this->rawResponse, $headerSize);
         
        
         //$rawHeaders = substr(strip_tags($this->rawResponse), 0, $headerSize);
