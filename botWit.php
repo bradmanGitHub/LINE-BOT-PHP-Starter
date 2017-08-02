@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
 			
 			$response = $app->post('/intents', $data);
 			//$messageStr = var_dump($response->getDecodedBody());
-			$messageStr = $response->getDecodedBody();
+			//$messageStr = $response->getDecodedBody();
 			//--invoke wit.ai --------------- END
 
 
@@ -48,7 +48,7 @@ if (!is_null($events['events'])) {
 			$messages = [
 				'type' => 'text',
 				//'text' =>  'OK Boss..'. $text
-				'text' => $messageStr
+				'text' => $response
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
