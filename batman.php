@@ -7,11 +7,11 @@ $app = new Wit(array(
     'default_access_token' => 'VTNKPHFNIEYJVKPR3QPVXU3XG43PDHYK')
 );
 
-/*
+
 //--invoke wit.ai --------------- START
 $response = $app->get('/intents');
 var_dump($response->getDecodedBody());
-
+/*
 $data = [
     "name" => "food_request",
     "doc"  => "detect food request",
