@@ -13,13 +13,12 @@ $app = new Wit(array(
 //var_dump($response->getDecodedBody());
 
 $data = [
-    "name" => "food_request",
-    "doc"  => "detect food request",
+    "name" => "flight_request",
+    "doc"  => "detect flight request",
     "expressions" => [
-        ["body" => "testing"]
-        //,
-        //["body" => "I want to fly from london to sfo"],
-        //["body" => "need a flight from paris to tokyo"],
+        ["body" => "fly from incheon to sfo"],
+        ["body" => "I want to fly from london to sfo"],
+        ["body" => "need a flight from paris to tokyo"],
     ]
 ];
 
@@ -28,4 +27,4 @@ var_dump($response->getDecodedBody());
 //$messageStr = $response->getDecodedBody();
 //--invoke wit.ai --------------- END
 
-echo "OKkk77";
+echo "OKkk88";
