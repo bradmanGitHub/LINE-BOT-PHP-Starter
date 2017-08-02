@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/vendor/autoload.php';
+require_once 'vendor/autoload.php';
 use Wit\Wit;
 $app = new Wit(array(
     'default_access_token' => 'VTNKPHFNIEYJVKPR3QPVXU3XG43PDHYK')
