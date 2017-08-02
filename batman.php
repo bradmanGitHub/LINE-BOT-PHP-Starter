@@ -9,9 +9,8 @@ $app = new Wit(array(
 
 
 //--invoke wit.ai --------------- START
-$response = $app->get('/intents');
-/*
-var_dump($response->getDecodedBody());
+//$response = $app->get('/intents');
+//var_dump($response->getDecodedBody());
 
 $data = [
     "name" => "food_request",
@@ -23,7 +22,7 @@ $data = [
         //["body" => "need a flight from paris to tokyo"],
     ]
 ];
-
+/*
 $response = $app->post('/intents', $data);
 var_dump($response->getDecodedBody());
 //$messageStr = $response->getDecodedBody();
