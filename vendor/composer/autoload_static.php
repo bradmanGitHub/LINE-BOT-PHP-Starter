@@ -7,6 +7,7 @@ namespace Composer\Autoload;
 class ComposerStaticInit02679edf4126f3db010f2dee2bed492e
 {
     public static $files = array (
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -17,6 +18,13 @@ class ComposerStaticInit02679edf4126f3db010f2dee2bed492e
         array (
             'Wit\\' => 4,
         ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\DomCrawler\\' => 29,
+            'Symfony\\Component\\CssSelector\\' => 30,
+            'Symfony\\Component\\BrowserKit\\' => 29,
+        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -26,6 +34,7 @@ class ComposerStaticInit02679edf4126f3db010f2dee2bed492e
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Goutte\\' => 7,
         ),
     );
 
@@ -33,6 +42,22 @@ class ComposerStaticInit02679edf4126f3db010f2dee2bed492e
         'Wit\\' => 
         array (
             0 => __DIR__ . '/..' . '/wimkumpen/wit-php-sdk/src',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\DomCrawler\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/dom-crawler',
+        ),
+        'Symfony\\Component\\CssSelector\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/css-selector',
+        ),
+        'Symfony\\Component\\BrowserKit\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -50,6 +75,27 @@ class ComposerStaticInit02679edf4126f3db010f2dee2bed492e
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Goutte\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/fabpot/goutte/Goutte',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        's' => 
+        array (
+            'stringEncode' => 
+            array (
+                0 => __DIR__ . '/..' . '/paquettg/string-encode/src',
+            ),
+        ),
+        'P' => 
+        array (
+            'PHPHtmlParser' => 
+            array (
+                0 => __DIR__ . '/..' . '/paquettg/php-html-parser/src',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -57,6 +103,7 @@ class ComposerStaticInit02679edf4126f3db010f2dee2bed492e
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit02679edf4126f3db010f2dee2bed492e::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit02679edf4126f3db010f2dee2bed492e::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit02679edf4126f3db010f2dee2bed492e::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

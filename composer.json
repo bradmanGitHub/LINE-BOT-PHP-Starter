@@ -1,12 +1,9 @@
 {
   "require": {
-      "wimkumpen/wit-php-sdk": "1.0.*"
-  }
-  ,
- "requirePHP": {
-    "php": "^5.6.0"
-  },
-    "requireXX": {
-    "ext-mbstring": "*"
+      "wimkumpen/wit-php-sdk": "1.0.*",
+       "fabpot/goutte": "^3.2",
+       "guzzlehttp/guzzle": "^6.2",
+       "paquettg/php-html-parser": "^1.7",
+       "ext-mbstring": "*"
   }
 }
