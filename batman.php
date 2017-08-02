@@ -16,9 +16,10 @@ $data = [
     "name" => "flight_request",
     "doc"  => "detect flight request",
     "expressions" => [
-        ["body" => "fly from incheon to sfo"],
-        ["body" => "I want to fly from london to sfo"],
-        ["body" => "need a flight from paris to tokyo"],
+        ["body" => "ถามหน่อย"]
+        //,
+        //["body" => "I want to fly from london to sfo"],
+        //["body" => "need a flight from paris to tokyo"],
     ]
 ];
 
