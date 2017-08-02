@@ -6,8 +6,4 @@
   "requirePhP5": {
         "php": ">=5.3.3"
     }
-    ,
-   "requireMBS": {
-    "ext-mbstring": "*"
-  }
 }
