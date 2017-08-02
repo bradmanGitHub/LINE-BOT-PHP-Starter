@@ -39,7 +39,8 @@ if (!is_null($events['events'])) {
 			];
 			
 			$response = $app->post('/intents', $data);
-			$messageStr = var_dump($response->getDecodedBody());
+			//$messageStr = var_dump($response->getDecodedBody());
+			$messageStr = $response->getDecodedBody();
 			//--invoke wit.ai --------------- END
 
 
