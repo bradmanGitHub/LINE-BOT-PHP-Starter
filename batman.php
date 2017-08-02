@@ -3,7 +3,7 @@
 require_once 'vendor/autoload.php';
 use Wit\Wit;
 $app = new Wit(array(
-    'default_access_token' => 'VTNKPHFNIEYJVKPR3QPVXU3XG43PDHYK')
+    'default_access_token' => 'VTNKPHFNIEYJVKPR3QPVXU3XG43PDHYK') 
 );
 
 
