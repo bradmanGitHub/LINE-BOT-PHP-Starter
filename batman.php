@@ -10,8 +10,9 @@ $app = new Wit(array(
 
 //--invoke wit.ai --------------- START
 $response = $app->get('/intents');
-var_dump($response->getDecodedBody());
 /*
+var_dump($response->getDecodedBody());
+
 $data = [
     "name" => "food_request",
     "doc"  => "detect food request",
@@ -28,4 +29,4 @@ var_dump($response->getDecodedBody());
 //$messageStr = $response->getDecodedBody();
 //--invoke wit.ai --------------- END
 */
-echo "OKkk";
+echo "OKkkx";
