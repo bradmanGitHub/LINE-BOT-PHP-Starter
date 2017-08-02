@@ -15,7 +15,7 @@ $data = [
     "name" => "food_request",
     "doc"  => "detect food request",
     "expressions" => [
-        ["body" => $text]
+        ["body" => "testing"]
         //,
         //["body" => "I want to fly from london to sfo"],
         //["body" => "need a flight from paris to tokyo"],
@@ -23,10 +23,10 @@ $data = [
 ];
 
 $response = $app->post('/intents', $data);
-//$messageStr = var_dump($response->getDecodedBody());
+var_dump($response->getDecodedBody());
 //$messageStr = $response->getDecodedBody();
 //--invoke wit.ai --------------- END
 
 
 		
-echo "OK";
+echo "OKkk";
