@@ -1,8 +1,13 @@
 {
-    "require": {
-        "ext-bcmath": "*",
-        "ext-mcrypt": "*",
-        "ext-memcached": "*",
-        "ext-mongodb": "^1.1.0"
+  "require": {
+      "wimkumpen/wit-php-sdk": "1.0.*"
+  }
+  ,
+  "requirePhP5": {
+        "php": ">=5.3.3"
     }
+    ,
+   "requireMBS": {
+    "ext-mbstring": "*"
+  }
 }
